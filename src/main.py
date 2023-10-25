@@ -9,16 +9,17 @@ def main():
     running = True
     board = Board(WINDOW)
     board.draw_pieces()
+    board.run()
 
-    while running:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                running = False
-
-        pygame.display.update()
-
-    pygame.quit()
-    sys.exit()
+    # while running:
+    #     for event in pygame.event.get():
+    #         if event.type == pygame.QUIT:
+    #             running = False
+    #
+    #     pygame.display.update()
+    #
+    # pygame.quit()
+    # sys.exit()
 
 
 if __name__ == "__main__":
